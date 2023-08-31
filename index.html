@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valorant Companion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Valorant Companion</h1>
+        <nav>
+            <ul>
+                <li><a href="#sensitivity">Sensitivity Calculator</a></li>
+                <li><a href="#maps">Maps Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sensitivity">
+        <h2>Sensitivity Calculator</h2>
+        <div class="calculator">
+            <label for="dpi">DPI:</label>
+            <input type="number" id="dpi" placeholder="e.g. 800" min="1" required><br>
+            <label for="ingame-sens">In-Game Sensitivity:</label>
+            <input type="number" id="ingame-sens" placeholder="e.g. 0.5" step="0.01" min="0.01" required><br>
+            <button onclick="calculateSensitivity()">Calculate eDPI</button>
+            <p class="result">eDPI: <span id="edpi-result"></span></p>
+        </div>
+    </section>
+
+    <section id="maps">
+        <h2>Maps Gallery</h2>
+        <div class="map-gallery">
+            <img src="bind.jpg" alt="Bind Map">
+            <img src="haven.jpg" alt="Haven Map">
+            <img src="split.jpg" alt="Split Map">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Valorant Companion. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
